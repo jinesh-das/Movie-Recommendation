@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #181819;
+    border-radius: 10px;
+}
+
+/* Disable text selection during swipe */
+.mySwiper {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  
+  
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.scroller {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.swiper-container {
+    display: flex;
+    justify-content: center; /* Center the Swiper slides */
+  }
+  
+  .swiper-slide {
+    width: 200px; /* Set a fixed width for the slide */
+    margin-right: 10px; /* Add some spacing between slides */
+  }
